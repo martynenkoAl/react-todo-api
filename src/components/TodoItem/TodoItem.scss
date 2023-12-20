@@ -1,0 +1,78 @@
+.todo {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  font-size: 17px;
+  padding: 12px 8px 12px 50px;
+  user-select: none;
+  position: relative;
+
+  .todo__edit {
+    display: flex;
+    width: 70%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-weight: 14px;
+    font-size: 17px;
+  }
+
+  .todo__btns {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 5px;
+  }
+
+  button {
+    border: none;
+    outline: none;
+    padding: 5px 8px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 40px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      filter: brightness(70%);
+    }
+  }
+
+  .todo__text {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    align-items: center;
+
+    span {
+      font-size: 12px;
+    }
+  }
+
+  .todo__status {
+    position: absolute;
+    height: 23px;
+    width: 23px;
+    top: 11px;
+    left: 10px;
+    cursor: pointer;
+  }
+}
+
+.edit {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #edeef0;
+  border-radius: 30px;
+  padding: 11px;
+  padding-left: 20px;
+}
+
+.checked {
+  color: #555;
+  text-decoration: line-through;
+}
